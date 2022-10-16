@@ -13,7 +13,6 @@ if(cmd[2] == 'add') {
         id: cmd[3],
         title: cmd[4],
         body: cmd[5]
-
     }
     //get old note value
     var oldnote = read()

@@ -1,1 +1,1 @@
-[]
+[{"id":"01","title":"my first note","body":"don't forget to do assignment"},{"id":"01","title":"my first note","body":"don't forget to do assignment"}]

@@ -1,12 +1,11 @@
 const fs = require('fs')
 
-const add = function(note=[], oldnote) {
-    let finalnote = JSON.parse(oldnote)
-
-    finalnote.push(note)
-
-    let object = JSON.stringify(finalnote)
-    fs.writeFileSync('note.txt, objectnote')
+const add = function(note=[], oldNote) {
+    //parse oldNote from string to object of arrays
+    const newNote = JSON.parse(oldNote)
+    //add new note to oldNote
+    newNote.push(note)
+    //save new note to note.txt again
+    fs.writeFileSync('note.txt', JSON.stringify(newNote))
 }
-
 module.exports = add
